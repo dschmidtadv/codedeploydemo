@@ -6,8 +6,8 @@
 branch_config:
     wip\/.*: ~
 
-    master:
-        deploymentGroupName: production
+    '.*':
+        deploymentGroupName: drr
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
             ec2TagFilters:
@@ -16,7 +16,7 @@ branch_config:
             autoRollbackConfiguration:
                 enabled: true
 
-    '.*':
+    '.*www':
         deploymentGroupName: $BRANCH.staging.acme.tld
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
