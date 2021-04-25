@@ -7,7 +7,7 @@ branch_config:
     wip\/.*: ~
 
     '.*':
-        deploymentGroupName: drr
+        deploymentGroupName: codedeploydemo
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
             ec2TagFilters:
