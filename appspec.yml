@@ -14,7 +14,7 @@ branch_config:
                 #- { Type: KEY_AND_VALUE, Key: node_class, Value: production }
         deploymentConfig:
             autoRollbackConfiguration:
-                enabled: true
+                #enabled: true
 
     '.*www':
         deploymentGroupName: $BRANCH.staging.acme.tld
