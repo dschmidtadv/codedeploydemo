@@ -17,7 +17,7 @@ branch_config:
                 enabled: true
 
     '.*':
-        deploymentGroupName: $BRANCH.staging.acme.tld
+        deploymentGroupName: $BRANCH.drr
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
             ec2TagFilters:
