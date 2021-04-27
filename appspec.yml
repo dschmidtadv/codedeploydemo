@@ -23,3 +23,4 @@ branch_config:
         deploymentGroupName: $BRANCH.staging.acme.tld
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
+
