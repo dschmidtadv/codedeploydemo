@@ -12,7 +12,7 @@ branch_config:
     wip\/.*: ~
 
     '.*':
-        deploymentGroupName: codedeploydemo
+        deploymentGroupName: drr-group
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
         deploymentConfig:
