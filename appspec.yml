@@ -15,13 +15,13 @@ branch_config:
         deploymentGroupName: codedeploydemo
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
-      "ec2TagFilters": [
+        "ec2TagFilters": [
           {
               "Type": "KEY_AND_VALUE",
               "Value": "tf-asg-20210409224804761800000005",
               "Key": "aws:autoscaling:groupName"
           }
-      ],
+        ],
         deploymentConfig:
             autoRollbackConfiguration:
                 #enabled: true
