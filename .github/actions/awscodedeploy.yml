@@ -1,0 +1,2 @@
+- name: webfactory/create-aws-codedeploy-deployment
+  uses: webfactory/create-aws-codedeploy-deployment@v0.2.2

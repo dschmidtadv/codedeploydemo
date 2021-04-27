@@ -1,0 +1,24 @@
+# .appspec.yml
+
+# ... here be your existing CodeDeploy configuration.
+
+# This section controls the action:
+branch_config:
+    wip\/.*: ~
+
+    '.*':
+        deploymentGroupName: drr
+        deploymentGroupConfig:
+            serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
+            ec2TagFilters:
+                - { Type: KEY_AND_VALUE, Key: node_class, Value: production }
+        deploymentConfig:
+            autoRollbackConfiguration:
+                enabled: true
+
+    '.bla*':
+        deploymentGroupName: $BRANCH.drr
+        deploymentGroupConfig:
+            serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
+            ec2TagFilters:
+                - { Type: KEY_AND_VALUE, Key: hostname, Value: phobos.stage }
