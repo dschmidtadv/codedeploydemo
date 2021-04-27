@@ -1,6 +1,11 @@
 # .appspec.yml
 
 # ... here be your existing CodeDeploy configuration.
+version: 0.0
+os: linux
+files:
+  - source: /index.html
+    destination: /var/www/html/
 
 # This section controls the action:
 branch_config:
