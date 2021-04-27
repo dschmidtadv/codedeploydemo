@@ -16,7 +16,7 @@ branch_config:
         deploymentGroupConfig:
             serviceRoleArn: arn:aws:iam::176804238562:role/CodeDeployServiceRole
             ec2TagFilters:
-                - { Type: KEY_AND_VALUE, Key: aws:autoscaling:groupName, Value: tf-asg-20210409224804761800000005}
+                - { Type: KEY_AND_VALUE, Key: aws:autoscaling:groupName, Value: "tf-asg-20210409224804761800000005"}
         deploymentConfig:
             autoRollbackConfiguration:
                 #enabled: true
