@@ -4,8 +4,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
-    destination: /var/www/html/
+  - source: /README.md
+    destination: /
 
 # This section controls the action:
 branch_config:
